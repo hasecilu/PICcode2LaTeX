@@ -1,0 +1,26 @@
+;-------------------------------------------------------------------------------
+;                                    PIC16F887
+;                         +------------:__:------------+
+;                   ->  1 : RE3/MCLRn/VPP  ICSPDAT/RB7 : 40 <> PGD
+;       SWITCH VEL0 <>  2 : RA0/AN0        ICSPCLK/RB6 : 39 <> PGC
+;       SWITCH VEL1 <>  3 : RA1/AN1           AN13/RB5 : 38 <>
+;       SWITCH VEL2 <>  4 : RA2/AN2           AN11/RB4 : 37 <>
+;       SWITCH VEL3 <>  5 : RA3/AN3            AN9/RB3 : 36 <> BOBINA 3
+;                   <>  6 : RA4/C1OUT          AN8/RB2 : 35 <> BOBINA 2
+;                   <>  7 : RA5/C2OUT         AN10/RB1 : 34 <> BOBINA 1
+;                   <>  8 : RE0/AN5           AN12/RB0 : 33 <> BOBINA 0
+;                   <>  9 : RE1/AN6                VDD : 32 <- +5V
+;                   <> 10 : RE2/AN7                VSS : 31 <- GND
+;               +5V -> 11 : VDD                P1D/RD7 : 30 <>
+;               GND -> 12 : VSS                P1C/RD6 : 29 <>
+;        SWITCH DIR <> 13 : RA7/OSC1           P1B/RD5 : 28 <>
+;                   <> 14 : RA6/OSC2               RD4 : 27 <>
+;                   <> 15 : RC0/T1OSO        DT/RX/RC7 : 26 <>
+;                   <> 16 : RC1/T1OSI        CK/TX/RC6 : 25 <>
+;                   <> 17 : RC2/P1A            SDO/RC5 : 24 <>
+;                   <> 18 : RC3/SCK/SCL    SDA/SDI/RC4 : 23 <>
+;                   <> 19 : RD0                    RC3 : 22 <>
+;                   <> 20 : RD1                    RC2 : 21 <>
+;                         +----------------------------+
+;                                     DIP-40
+;-------------------------------------------------------------------------------
