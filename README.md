@@ -1,11 +1,15 @@
 # PICcode2LaTeX
+PIC Assembler syntax and style for latex lstlisting package.
 
-This PIC Assembler syntax and style for latex lstlisting package covers:
+## Features
 1. The 35 instructions for the PIC16F882/883/884/886/887
 2. All special function registers
 3. Some directives and keywords
+4. Easily extended for other devices
 
 You can change the colors or other parameters as letter size or break long lines option.
+
+## Usage
 
 Copy the PIC16F887.tex file in your project folder and add it to your main file.
 
@@ -15,7 +19,6 @@ Copy the PIC16F887.tex file in your project folder and add it to your main file.
 % Add the file in the preamble (before \begin{document}) using:
 \input{PIC16F887}
 ```
-
 Now you just need to paste your code inside a listing environment. Example:
 
 ```latex
@@ -43,7 +46,6 @@ T1AX:	BTFSS	PIR1,PIR1_TMR1IF_POSITION
 \end{lstlisting}
 ```
 
-## Examples
 ### Block comment
 ![Preview](https://raw.github.com/hasecilu/PICcode2LaTeX/main/images/Example.png)
 
