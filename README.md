@@ -1,6 +1,9 @@
 # PICcode2LaTeX
 
-This code covers the 35 instructions for the PIC16F882/883/884/886/887
+This PIC Assembler syntax and style for latex lstlisting package covers:
+1. The 35 instructions for the PIC16F882/883/884/886/887
+2. All special function registers
+3. Some directives and keywords
 
 You can change the colors or other parameters as letter size or break long lines option.
 
@@ -17,26 +20,26 @@ Now you just need to paste your code inside a listing environment. Example:
 
 ```latex
 \begin{lstlisting}
-C_P:     	NOP
+C_P:    NOP
 		
-		CALL T1A
+	CALL T1A
 		
-		CALL T1B
+	CALL T1B
 		
-		CALL T2A
+	CALL T2A
 		
-		CALL T2B
+	CALL T2B
 		
-		GOTO C_P
-		;-------------------------------------------------------------------------------
+	GOTO C_P
+	;-------------------------------------------------------------------------------
 T1A:	MOVLW	0x00	;T1CKPS1:T1CKPS0 = 11 | 0.52428[s]
-		MOVWF	TMR1H
-		MOVLW	0x00
-		MOVWF	TMR1L
+	MOVWF	TMR1H
+	MOVLW	0x00
+	MOVWF	TMR1L
 T1AX:	BTFSS	PIR1,PIR1_TMR1IF_POSITION
-		GOTO	T1AX			    ;if TMR1IF == 0 then repeat
-		BCF	PIR1,PIR1_TMR1IF_POSITION   ;if TMR1IF == 1 then reset TMR1IF
-		RETURN
+	GOTO	T1AX			    ;if TMR1IF == 0 then repeat
+	BCF	PIR1,PIR1_TMR1IF_POSITION   ;if TMR1IF == 1 then reset TMR1IF
+	RETURN
 \end{lstlisting}
 ```
 
