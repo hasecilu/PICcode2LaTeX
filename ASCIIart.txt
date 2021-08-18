@@ -1,7 +1,7 @@
 ;-------------------------------------------------------------------------------
 ;                                    PIC16F887
 ;                         +------------:__:------------+
-;                   ->  1 : RE3/MCLRn/VPP  ICSPDAT/RB7 : 40 <> PGD
+;                   ->  1 : RE3/nMCLR/VPP  ICSPDAT/RB7 : 40 <> PGD
 ;       SWITCH VEL0 <>  2 : RA0/AN0        ICSPCLK/RB6 : 39 <> PGC
 ;       SWITCH VEL1 <>  3 : RA1/AN1           AN13/RB5 : 38 <>
 ;       SWITCH VEL2 <>  4 : RA2/AN2           AN11/RB4 : 37 <>
